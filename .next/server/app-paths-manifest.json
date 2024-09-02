@@ -1,8 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/osmrtnice/page": "app/osmrtnice/page.js",
-  "/cvetlicarne/page": "app/cvetlicarne/page.js",
-  "/Pogrebi/page": "app/Pogrebi/page.js",
-  "/vspomin/page": "app/vspomin/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/vspomin/page": "app/vspomin/page.js"
 }

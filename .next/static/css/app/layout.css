@@ -2111,6 +2111,10 @@ html{
   --tw-bg-opacity: 1;
   background-color: rgb(255 229 180 / var(--tw-bg-opacity));
 }
+.bg-\[\#FFF1DB\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 241 219 / var(--tw-bg-opacity));
+}
 .bg-\[\#FFFFFF80\]{
   background-color: #FFFFFF80;
 }
@@ -2162,9 +2166,6 @@ html{
 }
 .bg-gradient-to-tr{
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-.bg-homebg{
-  background-image: url(webpack:///mini-css-extract-plugin//_next/static/media/homebackground.1c08dc50.png);
 }
 .from-\[\#D3D7DA\]{
   --tw-gradient-from: #D3D7DA var(--tw-gradient-from-position);
@@ -2314,6 +2315,9 @@ html{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.pb-4{
+  padding-bottom: 1rem;
 }
 .pb-8{
   padding-bottom: 2rem;
@@ -2739,6 +2743,10 @@ body {
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .md\:text-2xl{
     font-size: 1.5rem;

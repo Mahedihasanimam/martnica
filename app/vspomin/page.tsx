@@ -14,6 +14,8 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiFacebook } from "react-icons/ci";
 import { FiUserPlus } from "react-icons/fi";
 import Carose from '../components/appcomponents/Carose'
+import { CiCirclePlus } from "react-icons/ci";
+import ImageCardCarosel from '../components/appcomponents/ImageCardCarosel'
 const page = ({ onMenuClick }: any) => {
   return (
     <div className="bg-[#F2F6F9]">
@@ -134,13 +136,17 @@ const page = ({ onMenuClick }: any) => {
                 Povabi družino in prijatelje
               </h3>
               <hr />
-              <div className="flex flex-wrap space-y-4 md:space-y-0 justify-between">
+              <div className=" lg:flex md:flex flex-wrap gap-4 items-center justify-center  space-y-4">
+                <div>
                 <button className="btn bg-[#F8ECDA] border-2 border-[#D8A800] rounded-md px-4 md:px-8 text-[#D8A800]">
                   <MdOutlineMail size={25} /> Obvesti jih
                 </button>
-                <button className="btn bg-[#DAF3F8] border-2 border-[#00B4D8] rounded-md px-4 md:px-8 text-[#00B4D8]">
+                </div>
+                <div>
+                <button className="btn bg-[#DAF3F8] border-2 border-[#00B4D8] rounded-md px-4 md:px-4 text-[#00B4D8]">
                   <CiFacebook size={25} /> Deli na Facebooku
                 </button>
+                </div>
               </div>
               <p className="text-[#414141] text-center">
                 Kopiraj povezavo do te strani <br />
@@ -230,11 +236,22 @@ const page = ({ onMenuClick }: any) => {
 
       {/* +23 */}
       <div className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-gray-300 text-gray-500 bg-white shadow"style={{marginLeft:'-20px'}}>
-        +23
+        <CiCirclePlus/> 23
       </div>
     </div>
   </div>
 
+
+
+  <div className="text-center text-[#1E2125] py-12 max-w-lg mx-auto space-y-2">
+    <h3 className="text-4xl">Posvetilo</h3>
+    <p className="text-[#414141]">Delite zgodbe, čarobne trenutke, morda biografijo, zadnji pozdrav </p>
+    <p className="flex items-center justify-end pt-6"><CiCirclePlus/> Dodaj Posvetilo</p>
+  </div>
+
+<div>
+  <ImageCardCarosel/>
+</div>
 
   <div className="w-full">
    <div className="my-12  mx-auto text-center space-y-4">
@@ -255,6 +272,9 @@ const page = ({ onMenuClick }: any) => {
    </div>
   <Carose/>
   </div>
+
+
+  
 </div>
 
 
