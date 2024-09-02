@@ -13,9 +13,12 @@ import Image from "next/image";
 import { MdOutlineMail } from "react-icons/md";
 import { CiFacebook } from "react-icons/ci";
 import { FiUserPlus } from "react-icons/fi";
-import Carose from '../components/appcomponents/Carose'
+import Carose from "../components/appcomponents/Carose";
 import { CiCirclePlus } from "react-icons/ci";
-import ImageCardCarosel from '../components/appcomponents/ImageCardCarosel'
+import ImageCardCarosel from "../components/appcomponents/ImageCardCarosel";
+import SozalCard from "../components/util/SozalCard";
+import { BiUserPlus } from "react-icons/bi";
+import Cvet from '../components/util/Cvet'
 const page = ({ onMenuClick }: any) => {
   return (
     <div className="bg-[#F2F6F9]">
@@ -26,7 +29,6 @@ const page = ({ onMenuClick }: any) => {
         style={{ backgroundImage: `url(${bannerbg.src})` }}
       >
         <div className="container mx-auto flex flex-col lg:flex-row items-start justify-between">
-          
           {/* Left area */}
           <div className="lg:max-w-lg w-full space-y-6">
             <h3
@@ -47,8 +49,12 @@ const page = ({ onMenuClick }: any) => {
             </div>
 
             <div className="text-center max-w-lg space-y-3">
-              <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#1E2125]">Mario Danilo Primo</h3>
-              <p className="text-lg md:text-xl text-[#414141]">14.01.1948 - 21.02.2024</p>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#1E2125]">
+                Mario Danilo Primo
+              </h3>
+              <p className="text-lg md:text-xl text-[#414141]">
+                14.01.1948 - 21.02.2024
+              </p>
               <p className="text-lg">Ljubljana</p>
 
               <h3 className="text-xl md:text-2xl lg:text-3xl flex items-end justify-end text-[#414141] font-great-vibes pt-6 max-w-sm">
@@ -61,10 +67,13 @@ const page = ({ onMenuClick }: any) => {
           {/* Right area */}
           <div className="space-y-6">
             <div className="p-6 md:p-8 lg:p-12 rounded-lg shadow-custom-light-dark-with-white bg-gradient-to-tr from-[#E3E8EC] to-[#FFFFFF] space-y-4">
-              <h3 className="text-xl md:text-2xl font-normal text-[#1E2125]">Osmrtnica</h3>
+              <h3 className="text-xl md:text-2xl font-normal text-[#1E2125]">
+                Osmrtnica
+              </h3>
               <hr />
               <p className="text-[#414141]">
-                Sporočamo žalostno vest, da je nas je v 76. letu starosti zapustil <br /> naš predragi Mario Danilo Primo. Vsi njegovi.
+                Sporočamo žalostno vest, da je nas je v 76. letu starosti
+                zapustil <br /> naš predragi Mario Danilo Primo. Vsi njegovi.
               </p>
             </div>
 
@@ -77,7 +86,9 @@ const page = ({ onMenuClick }: any) => {
             </div>
 
             <div className="p-6 md:p-8 lg:p-12 rounded-lg shadow-custom-light-dark-with-white bg-gradient-to-tr from-[#E3E8EC] to-[#FFFFFF] space-y-4">
-              <h3 className="text-xl md:text-2xl font-normal text-[#1E2125]">Dogodki</h3>
+              <h3 className="text-xl md:text-2xl font-normal text-[#1E2125]">
+                Dogodki
+              </h3>
               <hr />
               <div className="flex flex-col md:flex-row justify-between gap-6 pb-8">
                 <div className="w-fit px-4 py-2 rounded-lg bg-[#2592c9] text-white">
@@ -85,7 +96,9 @@ const page = ({ onMenuClick }: any) => {
                   <p className="text-sm md:text-lg">sep</p>
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-lg md:text-2xl text-[#1E2125]">Zadnje slovo</h3>
+                  <h3 className="text-lg md:text-2xl text-[#1E2125]">
+                    Zadnje slovo
+                  </h3>
                   <p className="text-[#414141]">Torek, 9:00</p>
                   <p className="text-[#414141]">
                     Poslovilna vežica, Pokopališče v Gabrskem, Trbovlje
@@ -138,14 +151,14 @@ const page = ({ onMenuClick }: any) => {
               <hr />
               <div className=" lg:flex md:flex flex-wrap gap-4 items-center justify-center  space-y-4">
                 <div>
-                <button className="btn bg-[#F8ECDA] border-2 border-[#D8A800] rounded-md px-4 md:px-8 text-[#D8A800]">
-                  <MdOutlineMail size={25} /> Obvesti jih
-                </button>
+                  <button className="btn bg-[#F8ECDA] border-2 border-[#D8A800] rounded-md px-4 md:px-8 text-[#D8A800]">
+                    <MdOutlineMail size={25} /> Obvesti jih
+                  </button>
                 </div>
                 <div>
-                <button className="btn bg-[#DAF3F8] border-2 border-[#00B4D8] rounded-md px-4 md:px-4 text-[#00B4D8]">
-                  <CiFacebook size={25} /> Deli na Facebooku
-                </button>
+                  <button className="btn bg-[#DAF3F8] border-2 border-[#00B4D8] rounded-md px-4 md:px-4 text-[#00B4D8]">
+                    <CiFacebook size={25} /> Deli na Facebooku
+                  </button>
                 </div>
               </div>
               <p className="text-[#414141] text-center">
@@ -183,14 +196,14 @@ const page = ({ onMenuClick }: any) => {
       </div>
 
       <div className="container mx-auto my-20 space-y-6  ">
-  <div className="text-center space-y-3">
-    <h3 className="text-3xl md:text-5xl text-[#1E2125]">Žalna knjiga</h3>
-    <p className="text-[#414141]">Vpiši se v Žalno knjigo</p>
-  </div>
+        <div className="text-center space-y-3">
+          <h3 className="text-3xl md:text-5xl text-[#1E2125]">Žalna knjiga</h3>
+          <p className="text-[#414141]">Vpiši se v Žalno knjigo</p>
+        </div>
 
-  <div className="flex items-center justify-center my-12 ">
-    <div className="flex flex-wrap justify-center space-x-4 md:space-x-6">
-    <button className="flex items-center  rounded-md h-16 w-[125px] justify-center  shadow-custom-light-dark bg-[#FFFFFF]  border  -mr-8 ">
+        <div className="flex items-center justify-center my-12 ">
+          <div className="flex flex-wrap justify-center space-x-4 md:space-x-6">
+            <button className="flex items-center  rounded-md h-16 w-[125px] justify-center  shadow-custom-light-dark bg-[#FFFFFF]  border  -mr-8 ">
               <div
                 style={{
                   fontSize: "16px",
@@ -199,64 +212,85 @@ const page = ({ onMenuClick }: any) => {
                   color: "#1E2125",
                   textAlign: "center",
                   fontVariationSettings: "'opsz' 16",
-                }}>
-                <FiUserPlus/>
+                }}
+              >
+                <FiUserPlus />
                 Prikaži več
               </div>
             </button>
-      {/* JK */}
-      <div className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-pink-300 text-pink-500 bg-white shadow bg-[#F1A5F366]" >
-        JK
-      </div>
+            {/* JK */}
+            <div className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-pink-300 text-pink-500 bg-white shadow bg-[#F1A5F366]">
+              JK
+            </div>
 
-      {/* A */}
-      <div className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-gray-100 text-gray-500 shadow bg-[#FFFFFF]"style={{marginLeft:'-20px'}}>
-        A
-      </div>
+            {/* A */}
+            <div
+              className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-gray-100 text-gray-500 shadow bg-[#FFFFFF]"
+              style={{ marginLeft: "-20px" }}
+            >
+              A
+            </div>
 
-      {/* K */}
-      <div className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-blue-300 text-blue-500 bg-white shadow"style={{marginLeft:'-20px'}}>
-        K
-      </div>
+            {/* K */}
+            <div
+              className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-blue-300 text-blue-500 bg-white shadow"
+              style={{ marginLeft: "-20px" }}
+            >
+              K
+            </div>
 
-      {/* B */}
-      <div className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-red-300 text-red-500 bg-white shadow"style={{marginLeft:'-20px'}}>
-        B
-      </div>
+            {/* B */}
+            <div
+              className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-red-300 text-red-500 bg-white shadow"
+              style={{ marginLeft: "-20px" }}
+            >
+              B
+            </div>
 
-      {/* AS */}
-      <div className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-gray-300 text-gray-500 bg-white shadow"style={{marginLeft:'-20px'}}>
-        AS
-      </div>
+            {/* AS */}
+            <div
+              className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-gray-300 text-gray-500 bg-white shadow"
+              style={{ marginLeft: "-20px" }}
+            >
+              AS
+            </div>
 
-      {/* M */}
-      <div className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-teal-300 text-teal-500 bg-white shadow"style={{marginLeft:'-20px'}}>
-        M
-      </div>
+            {/* M */}
+            <div
+              className="flex items-center justify-center p-4 md:p-6 px-6 md:px-8 rounded-full border-2 border-teal-300 text-teal-500 bg-white shadow"
+              style={{ marginLeft: "-20px" }}
+            >
+              M
+            </div>
 
-      {/* +23 */}
-      <div className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-gray-300 text-gray-500 bg-white shadow"style={{marginLeft:'-20px'}}>
-        <CiCirclePlus/> 23
-      </div>
-    </div>
-  </div>
+            {/* +23 */}
+            <div
+              className="flex items-center justify-center p-4 md:p-6 rounded-full border-2 border-gray-300 text-gray-500 bg-white shadow"
+              style={{ marginLeft: "-20px" }}
+            >
+              <CiCirclePlus /> 23
+            </div>
+          </div>
+        </div>
 
+        <div className="text-center text-[#1E2125] py-12 max-w-lg mx-auto space-y-2">
+          <h3 className="text-4xl">Posvetilo</h3>
+          <p className="text-[#414141]">
+            Delite zgodbe, čarobne trenutke, morda biografijo, zadnji pozdrav{" "}
+          </p>
+          <p className="flex items-center justify-end pt-6">
+            <CiCirclePlus /> Dodaj Posvetilo
+          </p>
+        </div>
 
+        <div>
+          <ImageCardCarosel />
+        </div>
 
-  <div className="text-center text-[#1E2125] py-12 max-w-lg mx-auto space-y-2">
-    <h3 className="text-4xl">Posvetilo</h3>
-    <p className="text-[#414141]">Delite zgodbe, čarobne trenutke, morda biografijo, zadnji pozdrav </p>
-    <p className="flex items-center justify-end pt-6"><CiCirclePlus/> Dodaj Posvetilo</p>
-  </div>
-
-<div>
-  <ImageCardCarosel/>
-</div>
-
-  <div className="w-full">
-   <div className="my-12  mx-auto text-center space-y-4">
-   <h3 className="text-4xl text-[] ">Nepozabni trenutki</h3>
-    <button className="flex items-center mx-auto  rounded-lg h-12 w-[125px] justify-center  shadow-custom-light-dark bg-gradient-to-br from-[#E3E8EC] to-[#FFFFFF]">
+        <div className="w-full">
+          <div className="pt-12  mx-auto text-center space-y-4">
+            <h3 className="text-4xl text-[] ">Nepozabni trenutki</h3>
+            <button className="flex items-center mx-auto  rounded-lg h-12 w-[125px] justify-center  shadow-custom-light-dark bg-gradient-to-br from-[#E3E8EC] to-[#FFFFFF]">
               <div
                 style={{
                   fontSize: "16px",
@@ -265,19 +299,78 @@ const page = ({ onMenuClick }: any) => {
                   color: "#1E2125",
                   textAlign: "center",
                   fontVariationSettings: "'opsz' 16",
-                }}>
-               <span className="border border-black px-1 rounded-full">+</span> Dodaj slike
+                }}
+              >
+                <span className="border border-black px-1 rounded-full">+</span>{" "}
+                Dodaj slike
               </div>
             </button>
-   </div>
-  <Carose/>
-  </div>
+          </div>
+          <Carose />
+        </div>
 
+        <div className="py-12">
+          <div>
+            <h3 className="text-[#1E2125] text-4xl py-6 text-center">
+              Sožalja <span className="text-[#0A85C2]">(21)</span>
+            </h3>
+            <div>
+              <button className="flex items-center mx-auto  rounded-3xl px-8 py-2 my-12 justify-center  shadow-custom-light-dark bg-gradient-to-br from-[#FFFFFF] to-[#FFFFFF4D] ">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: "24px",
+                    fontWeight: 400,
+                    color: "#1E2125",
+                    textAlign: "center",
+                    fontVariationSettings: "'opsz' 16",
+                  }}
+                >
+                  <span>
+                    {" "}
+                    <BiUserPlus className="text-center w-full text-2xl" />{" "}
+                  </span>{" "}
+                  DDodaj sožalje
+                </div>
+              </button>
+            </div>
+          </div>
+          <div className="lg:flex md:flex flex-row gap-8 items-center">
+            <div className="w-full">
+              {" "}
+              <SozalCard
+                title1={"Stane Z."}
+                title2={"Nečak"}
+                date={"15.12.2023"}
+                decription={"Moje iskreno sožalje. "}
+              />
+            </div>
+            <div className="w-full">
+              <SozalCard
+                title1={"Stane Z."}
+                title2={"Nečak"}
+                date={"15.12.2023"}
+                decription={"Moje iskreno sožalje. "}
+              />
+            </div>
+            <div className="w-full">
+              {" "}
+              <SozalCard
+                title1={"Stane Z."}
+                title2={"Nečak"}
+                date={"15.12.2023"}
+                decription={"Moje iskreno sožalje. "}
+              />
+            </div>
+          </div>
+          <div>
+            <button className="my-12 block mx-auto text-xl">Show more</button>
+          </div>
+        </div>
 
-  
-</div>
-
-
+      </div>
+        <Cvet/>
+      
     </div>
   );
 };
