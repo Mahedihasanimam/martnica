@@ -1,0 +1,46 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/osmrtnice/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/osmrtnice/page.css",
+      "static/chunks/app/osmrtnice/page.js"
+    ],
+    "/cvetlicarne/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/cvetlicarne/page.css",
+      "static/chunks/app/cvetlicarne/page.js"
+    ],
+    "/Pogrebi/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Pogrebi/page.css",
+      "static/chunks/app/Pogrebi/page.js"
+    ],
+    "/vspomintow/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/vspomintow/page.css",
+      "static/chunks/app/vspomintow/page.js"
+    ],
+    "/vspomin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/vspomin/page.css",
+      "static/chunks/app/vspomin/page.js"
+    ]
+  }
+}
