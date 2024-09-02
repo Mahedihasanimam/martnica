@@ -1,3 +1,5 @@
 {
-  "/vspomin/page": "app/vspomin/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/vspomin/page": "app/vspomin/page.js",
+  "/vspomintow/page": "app/vspomintow/page.js"
 }
